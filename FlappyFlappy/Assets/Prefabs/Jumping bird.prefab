@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1071473405190458169}
   - component: {fileID: 1071473405190458174}
   - component: {fileID: 1071473405190458175}
-  - component: {fileID: 1071473405190458172}
   - component: {fileID: 1071473405190458168}
+  - component: {fileID: 7853715258614686429}
   m_Layer: 0
   m_Name: Jumping bird
   m_TagString: Untagged
@@ -108,32 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &1071473405190458172
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071473405190458173}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.96, y: 2.8}
-    newSize: {x: 3.96, y: 2.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.96, y: 2.8}
-  m_EdgeRadius: 0
 --- !u!114 &1071473405190458168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +120,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7936a6d2bd4d9d94a866c3636205999e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &7853715258614686429
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071473405190458173}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2
