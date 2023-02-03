@@ -16,15 +16,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 tempPosition = transform.localPosition;
         Vector2 tempVelocity = myRigidbody.velocity;
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            tempPosition.y += 5f;
+            
             //tempPosition.x += 3f;
-            tempVelocity.y += 5f;
+            tempVelocity.y = 5f;
         }
-    transform.localPosition = tempPosition;
+    
         myRigidbody.velocity = tempVelocity;
     }
 }
